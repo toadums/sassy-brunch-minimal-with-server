@@ -1,6 +1,6 @@
 exports.config =
   paths:
-    watched: ["client", "vendor"]
+    watched: ["client", "vendor", "server"]
 
   files:
     javascripts:
@@ -19,6 +19,10 @@ exports.config =
   plugins:
     sass:
       debug: 'comments'
+
+  server:
+    path: "start_server"
+    run: true
 
   modules:
     nameCleaner: (path) ->
